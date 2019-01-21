@@ -1,0 +1,120 @@
+<div class="container">
+  <div class="col-12 mt-5 mb-5">
+    <h1>Monitor</h1>
+  </div>
+  
+  <div class="box col-12">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Beer</th>
+          <th scope="col">Dec</th>
+          <th scope="col">Min</th>
+          <th scope="col">Temp</th>
+          <th scope="col">Max</th>
+          <th scope="col">Inc</th>
+        </tr>
+      </thead>
+      <tbody>
+  
+          <tr [ngClass]="{
+            'table-warning': monitor.pilsner == -6 || monitor.pilsner == -4,
+            'table-danger': monitor.pilsner > -4,
+            'table-info': monitor.pilsner < -6
+          }">
+              <td>Pilsner</td>
+              <td>
+                  <button class="btn btn-primary btn-sm" style="width: 31px" (click)="requestAdjustmentMonitor('pilsner', -0.25)">-</button>
+              </td>
+              <td style="color: blue">-6°C</td>
+              <td>{{monitor.pilsner}}°C</td>
+              <td style="color: red">-4°C</td>
+              <td>
+                <button class="btn btn-danger btn-sm" style="width: 31px" (click)="requestAdjustmentMonitor('pilsner', 0.25)">+</button>
+              </td>
+          </tr>
+          <tr [ngClass]="{
+            'table-warning': monitor.ipa == -6 || monitor.ipa == -5,
+            'table-danger': monitor.ipa > -5,
+            'table-info': monitor.ipa < -6
+          }">
+              <td>Ipa</td>
+              <td>
+                  <button class="btn btn-primary btn-sm" style="width: 31px" (click)="requestAdjustmentMonitor('ipa', -0.25)">-</button>
+              </td>
+              <td style="color: blue">-6°C</td>
+              <td>{{monitor.ipa}}°C</td>
+              <td style="color: red">-5°C</td>
+              <td>
+                <button class="btn btn-danger btn-sm" style="width: 31px" (click)="requestAdjustmentMonitor('ipa', 0.25)">+</button>
+              </td>
+          </tr>
+          <tr [ngClass]="{
+            'table-warning': monitor.lager == -7 || monitor.lager == -4,
+            'table-danger': monitor.lager > -4,
+            'table-info': monitor.lager < -7
+          }">
+              <td>Lager</td>
+              <td>
+                <button class="btn btn-primary btn-sm" style="width: 31px" (click)="requestAdjustmentMonitor('lager', -0.25)">-</button>
+              </td>
+              <td style="color: blue">-7°C</td>
+              <td>{{monitor.lager}}°C</td>
+              <td style="color: red">-4°C</td>
+              <td>
+                <button class="btn btn-danger btn-sm" style="width: 31px" (click)="requestAdjustmentMonitor('lager', 0.25)">+</button>
+              </td>
+          </tr>
+          <tr [ngClass]="{
+            'table-warning': monitor.stout == -8 || monitor.stout == -6,
+            'table-danger': monitor.stout > -6,
+            'table-info': monitor.stout < -8
+          }">
+              <td>Stout</td>
+              <td>
+                <button class="btn btn-primary btn-sm" style="width: 31px" (click)="requestAdjustmentMonitor('stout', -0.25)">-</button>
+              </td>
+              <td style="color: blue">-8°C</td>
+              <td>{{monitor.stout}}°C</td>
+              <td style="color: red">-6°C</td>
+              <td>
+                <button class="btn btn-danger btn-sm" style="width: 31px" (click)="requestAdjustmentMonitor('stout', 0.25)">+</button>
+              </td>
+          </tr>
+          <tr [ngClass]="{
+            'table-warning': monitor.wheat == -5 || monitor.wheat == -3,
+            'table-danger': monitor.wheat > -3,
+            'table-info': monitor.wheat < -5
+          }">
+              <td>Wheat</td>
+              <td>
+                <button class="btn btn-primary btn-sm" style="width: 31px" (click)="requestAdjustmentMonitor('wheat', -0.25)">-</button>
+              </td>
+              <td style="color: blue">-5°C</td>
+              <td>{{monitor.wheat}}°C</td>
+              <td style="color: red">-3°C</td>
+              <td>
+                <button class="btn btn-danger btn-sm" style="width: 31px" (click)="requestAdjustmentMonitor('wheat', 0.25)">+</button>
+              </td>
+          </tr>
+          <tr [ngClass]="{
+            'table-warning': monitor.pale == -6 || monitor.pale == -4,
+            'table-danger': monitor.pale > -4,
+            'table-info': monitor.pale < -6
+          }">
+              <td>Pale</td>
+              <td>
+                <button class="btn btn-primary btn-sm" style="width: 31px" (click)="requestAdjustmentMonitor('pale', -0.25)">-</button>
+              </td>
+              <td style="color: blue">-6°C</td>
+              <td>{{monitor.pale}}°C</td>
+              <td style="color: red">-4°C</td>
+              <td>
+                <button class="btn btn-danger btn-sm" style="width: 31px" (click)="requestAdjustmentMonitor('pale', 0.25)">+</button>
+              </td>
+          </tr>
+          
+      </tbody>
+    </table>
+  </div>
+</div>

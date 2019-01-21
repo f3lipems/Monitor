@@ -1,0 +1,1 @@
+{"pilsner":-5.25,"ipa":-4,"lager":-12.75,"stout":-5.75,"wheat":-5.25,"pale":-3.25}
