@@ -23,7 +23,7 @@ https://angular.io/
 
 ### API
 
-Para utilizar nossa API siga os seguintes passos.
+Para utilizar a API siga os seguintes passos.
 
 Na pasta /API 
 - Utilize o comando para instalar as dependências do node
@@ -49,7 +49,7 @@ localhost:8000
 
 ### SPA
 
-Para utilizar nossa SPA siga os seguintes passos.
+Para utilizar a SPA siga os seguintes passos.
 
 - Utilize o comando para instalar as dependências do Angular
 
