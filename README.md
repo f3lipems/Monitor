@@ -79,4 +79,16 @@ localhost:4200
 
 - Secundárias
 * Bootstraps
+*Ejs
+```
+### Ajustes para versão 2.0
+```
+* Ajustes de sincronismo no painel da api;
+* Implementaçao de base de dados;
+* Implementação de testes;
+```
+
+### Caracteristicas do projeto
+```
+O projeto possui duas camadas, a camada de backand representada pela api, onde temos um ambiente que simula de maneira randomica alterações de temperatura em freezers de transporte de bebidas, alem de fornecer as informações e os meios para corrigir as alterações indesejadas. A camada de frontend representada pela spa, nos da um painel onde podemos monitorar e fazer ajustes de nas temperaturas dos freezers de bebida.
 ```
